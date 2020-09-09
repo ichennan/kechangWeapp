@@ -1,0 +1,21 @@
+/* pages/post/post.wxss */
+.post-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.post-article{border: 1px solid black}
+
+.post-imaegs{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.post-image{
+  width: 180rpx;
+  height: 180rpx;
+  margin: 10rpx;
+}
+.form-button{
+  margin: 10rpx;
+}

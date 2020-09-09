@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="post-block">
+    <view class="post-article c-block">
+      <textarea class="input" placeholder-style="font-size:15px" 
+    placeholder="我想说点啥。。。" auto-focus bindinput="bindinput_postArticle" value="{{_postArticle}}">
+      </textarea>
+    </view>
+    <view class="post-images">
+      <image bindtap="bindViewTap" class="addImage post-image" src="../../images/add_image.png" mode="cover" bindtap="uploadImage"></image>
+      <image bindtap="bindViewTap" class="addImage post-image" src="../../images/add_image.png" mode="cover"></image>
+      <image bindtap="bindViewTap" class="addImage post-image" src="../../images/add_image.png" mode="cover"></image>
+    </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="button-block">
+    <button class="form-button" bindtap="submitPost"> 提交 </button>
+    <button class="form-button" bindtap="clearPost"> 清空 </button>
+  </view>
+  </view>
+</view>
